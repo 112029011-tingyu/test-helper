@@ -50,3 +50,18 @@ a{color:var(--indigo)}
 .week-list a:hover{color:var(--indigo);padding-left:.5rem}
 @media(max-width:700px){.with-figure{grid-template-columns:1fr}.with-figure figure{margin-top:1.2rem}.cover{flex-direction:column-reverse;align-items:flex-start;gap:1.5rem}.course{writing-mode:horizontal-tb;border-left:0;padding-left:0}.slide{padding:3rem 1.5rem 4.5rem}}
 @media print{.counter,.nav{display:none}.js body::before{display:none}.js .slide{display:block;max-height:none;min-height:0}.js body{overflow:visible}.slide{break-after:page}}
+/* ===== 首頁:最近新增 + 全部筆記 ===== */
+.lead{margin:0 0 .5rem}
+.stats{margin:0 0 3rem;font-size:.9rem;color:var(--muted)}
+.recent,.all-notes{margin:0 0 3.5rem}
+.week-list a{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem 1rem}
+.week-list .date{min-width:6.5rem;font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+.week-list .title{flex:1}
+.week-list .tag{padding:0 .6rem;border-radius:2px;background:var(--sakura);font-size:.75rem;color:var(--indigo)}
+details.subject{margin:0;padding:1rem 0;border-bottom:1px solid var(--line)}
+details.subject summary{display:flex;align-items:baseline;list-style:none;font-family:var(--serif);font-size:1.25rem;font-weight:500}
+details.subject summary::-webkit-details-marker{display:none}
+details.subject summary::after{content:"＋";margin-left:1rem;color:var(--sage)}
+details.subject[open] summary::after{content:"－"}
+details.subject .count{margin-left:auto;font-family:var(--sans);font-size:.8rem;font-weight:400;color:var(--muted)}
+details.subject .week-list{margin:.8rem 0 0}
